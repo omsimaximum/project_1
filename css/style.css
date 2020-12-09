@@ -13,11 +13,11 @@ ul{
 }
 
 
-/* 			MAIN SECTION		*/
-main{
+/* 		HEADER SECTION		*/
+header{
 	width: 100%;
 	min-height: 100vh;
-	background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0)),url(../images/mainbg.jpg);
+	background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/mainbg.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -84,6 +84,10 @@ nav{
 	padding: 5px 15px;
 	border-radius: 30px;
 	text-decoration: none;
+	transition: 0.3s;
+}
+.buttons .btn:hover{
+	background-color:rgba(1, 138, 189,0.3);
 }
 
 .hamburger{
@@ -143,8 +147,6 @@ nav{
 		margin-left: 0px;
 		margin-bottom: 30px;
 	}
-
-
 	.hamburger{
 		display: block;
 
@@ -186,6 +188,10 @@ margin-bottom: 10px
 	border-radius: 20px;
 	padding: 10px 25px;
 	font-size: 18px;
+	transition: 0.3s;
+}
+.courses:hover{
+	background-color:rgba(1, 138, 189,0.3);
 }
 @media screen and (max-width: 950px){
 	.main-banner h1{
@@ -208,10 +214,7 @@ margin-bottom: 10px
 	}
 	.main-banner h1{
 		font-size: 35px;
-	}
-	.hamburger::before{
-		margin-right: 5px;
-	}
+	} 
 }
 
 @media screen and (max-width: 450px){
@@ -228,6 +231,76 @@ margin-bottom: 10px
 	max-width: 250px;
 	line-height: 1.2;
 	font-size: 14px;
+	}
+}
+
+
+
+/* COUNT SECTION */
+
+.second {
+  background-color: white;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+
+.counter-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 10px;
+  padding: 30px 10px; 
+  border-radius: 20px;
+  box-shadow:3px 9px 12px 2px rgba(0,0,0,0.69);
+  transition: 0.3s;
+  color: #414a4c;
+}
+.second:nth-child(1) div:hover{
+	color: black;
+	transform: translateY(-5px);
+}
+.second div:nth-child(1):hover i{
+	color: #55acee;
+}
+.second div:nth-child(2):hover{
+	color: black;
+	transform: translateY(-5px);
+}
+.second div:nth-child(2):hover{
+	color: #cd201f;
+}
+.second div:nth-child(3):hover{
+	color: black;
+	transform: translateY(-5px);
+}
+.second div:nth-child(3):hover{
+	color: #3b5999;
+}
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+@media(max-width: 900px){
+	.second{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.counter-container{
+		margin: 15px 10px;
+	}
+
+}
+@media(max-width: 600px){
+	.second{
+		padding: 20px 20px;
+	}
+	.counter{
+		font-size: 40px;
 	}
 }
 }
